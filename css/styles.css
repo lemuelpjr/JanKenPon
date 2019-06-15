@@ -4,3 +4,11 @@
 body {
   font-family: 'Roboto', "Helvetica Neue", Helvetica, sans-serif;
 }
+
+.header {
+  max-width: 760px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
