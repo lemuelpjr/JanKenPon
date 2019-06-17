@@ -3,9 +3,11 @@
 
 body {
   font-family: 'Roboto', "Helvetica Neue", Helvetica, sans-serif;
+  background: #000;
 }
 
 .header {
+  color: #eee;
   max-width: 760px;
   height: 100%;
   display: flex;
