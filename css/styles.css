@@ -1,9 +1,9 @@
-/* Imports Google font Roboto */
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+/* Imports Google font Ubuntu */
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
 
 body {
-  font-family: 'Roboto', "Helvetica Neue", Helvetica, sans-serif;
-  background: #000;
+  font-family: 'Ubuntu', "Helvetica Neue", Helvetica, sans-serif;
+  background: yellow;
   text-align: center;
 }
 
@@ -14,10 +14,15 @@ body {
 }
 
 .header {
-  color: #eee;
+  color: #222;
   max-width: 760px;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+h1 {
+  font-size: 6rem;
+  font-weight: bold;
 }
