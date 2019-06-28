@@ -2,6 +2,9 @@
 
 A rock-paper-scissors game.
 
-Janken is the name of an imaginary player who will challenge you to play the game.
+## The rules:
 
-It works on the web browser so you can play it with any device.
+1 - Click on one of the three available options: rock (circle), paper (square), scissors (X):
+2 - Computer will randomly choose his option and display the result;
+3 - Rock wins over scissors, scissors wins over paper and paper wins over rock;
+4 - After the result you can choose to continue playing or reset all the score.
