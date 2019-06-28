@@ -19,10 +19,12 @@ body {
 header {
   background-color: #444;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  transform: skew(0deg, 4deg) translateY(-90px);
 }
 
 header h1 {
   color: #fafafa;
   font-size: 4rem;
-  padding: 10px 0;
+  padding-bottom: 110px;
+  transform: skew(0deg, -4deg) translateY(96px);
 }
