@@ -4,6 +4,9 @@
 #444;
 */
 
+/*
+### GENERAL STYLES ###
+*/
 body {
   font-family: 'Ubuntu', "Helvetica Neue", Helvetica, sans-serif;
   background-color: #88f580;
@@ -16,6 +19,9 @@ body {
   margin: auto;
 }
 
+/*
+### HEADER STYLES ###
+*/
 header {
   background-color: #444;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
@@ -27,4 +33,28 @@ header h1 {
   font-size: 4rem;
   padding-bottom: 110px;
   transform: skew(0deg, -4deg) translateY(96px);
+}
+
+/*
+### PLAYER BUTTONS STYLES ###
+*/
+#player-buttons {
+  background-color: #fafafa;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+  margin: 20px;
+}
+
+.btn {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  width: 60px;
+  margin-bottom: 12px;
+}
+
+.btn-name {
+  font-size: 1.6rem;
+  font-weight: bold;
 }
