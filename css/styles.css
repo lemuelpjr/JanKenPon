@@ -4,31 +4,25 @@
 #444;
 */
 
-/* Imports Google font Ubuntu */
-@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
-
 body {
   font-family: 'Ubuntu', "Helvetica Neue", Helvetica, sans-serif;
   background: #88f580;
   text-align: center;
 }
 
-.container {
+/* .container {
   display: flex;
   justify-content: center;
   align-items: center;
+} */
+
+header {
+  background-color: #444;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
 }
 
-.header {
-  color: #444;
-  max-width: 760px;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-h1 {
-  font-size: 6rem;
-  font-weight: bold;
+header h1 {
+  color: #fafafa;
+  font-size: 4rem;
+  padding: 10px 0;
 }
