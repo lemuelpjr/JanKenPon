@@ -1,9 +1,15 @@
+/* Colors for reference
+#88f580;
+#fafafa;
+#444;
+*/
+
 /* Imports Google font Ubuntu */
 @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
 
 body {
   font-family: 'Ubuntu', "Helvetica Neue", Helvetica, sans-serif;
-  background: yellow;
+  background: #88f580;
   text-align: center;
 }
 
@@ -14,7 +20,7 @@ body {
 }
 
 .header {
-  color: #222;
+  color: #444;
   max-width: 760px;
   height: 100vh;
   display: flex;
