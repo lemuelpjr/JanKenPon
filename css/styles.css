@@ -6,15 +6,15 @@
 
 body {
   font-family: 'Ubuntu', "Helvetica Neue", Helvetica, sans-serif;
-  background: #88f580;
+  background-color: #88f580;
+  color: #444;
   text-align: center;
 }
 
-/* .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
+.container {
+  max-width: 600px;
+  margin: auto;
+}
 
 header {
   background-color: #444;
