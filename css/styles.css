@@ -14,11 +14,6 @@ body {
   text-align: center;
 }
 
-.container {
-  max-width: 600px;
-  margin: auto;
-}
-
 /*
 ### HEADER STYLES ###
 */
@@ -36,8 +31,14 @@ header h1 {
 }
 
 /*
-### PLAYER BUTTONS STYLES ###
+### COMPUTER REUSLTS STYLES ###
 */
+#content {
+  max-width: 600px;
+  margin: auto;
+  transform: translateY(-50px);
+}
+
 #comp-result img {
   width: 60px;
   margin-top: 12px;
@@ -45,8 +46,12 @@ header h1 {
 
 #intro {
   font-size: 2.2rem;
+  margin: 40px 0;
 }
 
+/*
+### PLAYER BUTTONS STYLES ###
+*/
 #player-buttons {
   background-color: #baf580;
   border-radius: 15px;
