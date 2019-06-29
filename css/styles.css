@@ -38,6 +38,11 @@ header h1 {
 /*
 ### PLAYER BUTTONS STYLES ###
 */
+#comp-result img {
+  width: 60px;
+  margin-top: 12px;
+}
+
 #intro {
   font-size: 2.2rem;
 }
