@@ -1,5 +1,5 @@
 /* Colors for reference
-#88f580;
+#baf580;
 #fafafa;
 #444;
 */
@@ -9,7 +9,7 @@
 */
 body {
   font-family: 'Ubuntu', "Helvetica Neue", Helvetica, sans-serif;
-  background-color: #88f580;
+  background-color: #fafafa;
   color: #444;
   text-align: center;
 }
@@ -24,7 +24,7 @@ body {
 */
 header {
   background-color: #444;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   transform: skew(0deg, 4deg) translateY(-90px);
 }
 
@@ -38,8 +38,12 @@ header h1 {
 /*
 ### PLAYER BUTTONS STYLES ###
 */
+#intro {
+  font-size: 2.2rem;
+}
+
 #player-buttons {
-  background-color: #fafafa;
+  background-color: #baf580;
   border-radius: 15px;
   display: flex;
   justify-content: space-around;
@@ -48,7 +52,7 @@ header h1 {
 }
 
 .btn {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   border-radius: 50%;
   width: 60px;
   margin-bottom: 12px;
