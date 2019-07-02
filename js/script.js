@@ -86,6 +86,12 @@ function playerLoses() {
 }
 
 // Reset button functionalities
-document.getElementById('reset-btn').addEventListener('click', function () {
-  alert('You clicked RESET!');
+document.getElementById('reset-btn').addEventListener('click', function() {
+  alert('All the score points have been reseted!');
+  // Reset the scores
+  playerScore = 0;
+  compScore = 0;
+  // Show the scores in the document
+  document.getElementById('player-score').innerHTML = '<span class="name">You</span>: ' + playerScore + ' points';
+  document.getElementById('comp-score').innerHTML = '<span class="name">Computer</span>: ' + compScore + ' points';
 });
