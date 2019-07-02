@@ -69,21 +69,20 @@ function showCompResult(){
 function playerDraws() {
   var instructions = document.getElementById('instructions');
   instructions.innerHTML = 'It\'s a DRAW!';
-  console.log(playerScore, compScore);
 }
 
 function playerWins() {
   var instructions = document.getElementById('instructions');
   instructions.innerHTML = 'YOU WIN!';
   playerScore++;
-  console.log(playerScore, compScore);
+  document.getElementById('player-score').innerHTML = '<span class="name">You</span>: ' + playerScore + ' points';
 }
 
 function playerLoses() {
   var instructions = document.getElementById('instructions');
   instructions.innerHTML = 'YOU LOSE!';
   compScore++;
-  console.log(playerScore, compScore);
+  document.getElementById('comp-score').innerHTML = '<span class="name">Computer</span>: ' + compScore + ' points';
 }
 
 // Reset button functionalities
