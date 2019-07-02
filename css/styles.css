@@ -83,3 +83,27 @@ header h1 {
   cursor: pointer;
   padding: 6px 20px;
 }
+
+/*
+### PLAYER SCORES STYLES ###
+*/
+#scores {
+  margin: 40px 25px 0 25px;
+}
+
+#scores p {
+  font-size: 1.6rem;
+  display: inline;
+}
+
+.name {
+  font-weight: bold;
+}
+
+#player-score {
+  float: left;
+}
+
+#comp-score {
+  float: right;
+}
