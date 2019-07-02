@@ -1,51 +1,46 @@
-// Testing buttons for click event
+var compScore = 0, playerScore = 0;
+
+// Call functions according to player choices
 document.getElementById('rock-btn').addEventListener('click', rockChoice);
 document.getElementById('paper-btn').addEventListener('click', paperChoice);
 document.getElementById('scissors-btn').addEventListener('click', scissorsChoice);
 
-document.getElementById('reset-btn').addEventListener('click', function() {
-  alert('You clicked RESET!');
-});
-
 // Player selected rock and the choice value is set to 0
 function rockChoice() {
   var compChoice = showCompResult();
-  var instructions = document.getElementById('instructions');
   // Check for win
   if (compChoice === 0) {
-    instructions.innerHTML = 'It\'s a DRAW!';
+    playerDraws();
   } else if (compChoice === 1) {
-    instructions.innerHTML = 'YOU LOSE!';
+    playerLoses();
   } else {
-    instructions.innerHTML = 'YOU WIN!';
+    playerWins();
   }
 }
 
 // Player selected paper and the choice value is set to 1
 function paperChoice() {
   var compChoice = showCompResult();
-  var instructions = document.getElementById('instructions');
   // Check for win
   if (compChoice === 1) {
-    instructions.innerHTML = 'It\'s a DRAW!';
+    playerDraws();
   } else if (compChoice === 2) {
-    instructions.innerHTML = 'YOU LOSE!';
+    playerLoses();
   } else {
-    instructions.innerHTML = 'YOU WIN!';
+    playerWins();
   }
 }
 
 // Player selected scissors and the choice value is set to 2
 function scissorsChoice() {
   var compChoice = showCompResult();
-  var instructions = document.getElementById('instructions');
   // Check for win
   if (compChoice === 2) {
-    instructions.innerHTML = 'It\'s a DRAW!';
+    playerDraws();
   } else if (compChoice === 0) {
-    instructions.innerHTML = 'YOU LOSE!';
+    playerLoses();
   } else {
-    instructions.innerHTML = 'YOU WIN!';
+    playerWins();
   }
 }
 
@@ -70,3 +65,28 @@ function showCompResult(){
 
   return compChoice;
 }
+
+function playerDraws() {
+  var instructions = document.getElementById('instructions');
+  instructions.innerHTML = 'It\'s a DRAW!';
+  console.log(playerScore, compScore);
+}
+
+function playerWins() {
+  var instructions = document.getElementById('instructions');
+  instructions.innerHTML = 'YOU WIN!';
+  playerScore++;
+  console.log(playerScore, compScore);
+}
+
+function playerLoses() {
+  var instructions = document.getElementById('instructions');
+  instructions.innerHTML = 'YOU LOSE!';
+  compScore++;
+  console.log(playerScore, compScore);
+}
+
+// Reset button functionalities
+document.getElementById('reset-btn').addEventListener('click', function () {
+  alert('You clicked RESET!');
+});
