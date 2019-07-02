@@ -69,6 +69,9 @@ function showCompResult(){
 function playerDraws() {
   var instructions = document.getElementById('instructions');
   instructions.innerHTML = 'It\'s a DRAW!';
+  // Removes mark from last winner
+  document.getElementById('comp-score').classList.remove('last-winner');
+  document.getElementById('player-score').classList.remove('last-winner');
 }
 
 function playerWins() {
@@ -76,6 +79,9 @@ function playerWins() {
   instructions.innerHTML = 'YOU WIN!';
   playerScore++;
   document.getElementById('player-score').innerHTML = '<span class="name">You</span>: ' + playerScore + ' points';
+  // Add a mark to last winner and removes it from the previous one
+  document.getElementById('comp-score').classList.remove('last-winner');
+  document.getElementById('player-score').classList.add('last-winner');
 }
 
 function playerLoses() {
@@ -83,6 +89,9 @@ function playerLoses() {
   instructions.innerHTML = 'YOU LOSE!';
   compScore++;
   document.getElementById('comp-score').innerHTML = '<span class="name">Computer</span>: ' + compScore + ' points';
+  // Add a mark to last winner and removes it from the previous one
+  document.getElementById('player-score').classList.remove('last-winner');
+  document.getElementById('comp-score').classList.add('last-winner');
 }
 
 // Reset button functionalities
@@ -94,4 +103,7 @@ document.getElementById('reset-btn').addEventListener('click', function() {
   // Show the scores in the document
   document.getElementById('player-score').innerHTML = '<span class="name">You</span>: ' + playerScore + ' points';
   document.getElementById('comp-score').innerHTML = '<span class="name">Computer</span>: ' + compScore + ' points';
+  // Removes mark from last winner
+  document.getElementById('comp-score').classList.remove('last-winner');
+  document.getElementById('player-score').classList.remove('last-winner');
 });

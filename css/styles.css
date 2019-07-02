@@ -107,3 +107,9 @@ header h1 {
 #comp-score {
   float: right;
 }
+
+.last-winner {
+  background-color: #baf580;
+  border-radius: 10px;
+  padding: 5px;
+}
