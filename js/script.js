@@ -10,36 +10,42 @@ document.getElementById('reset-btn').addEventListener('click', function() {
 // Player selected rock and the choice value is set to 0
 function rockChoice() {
   var compChoice = showCompResult();
+  var instructions = document.getElementById('instructions');
+  // Check for win
   if (compChoice === 0) {
-    console.log('It is a draw!');
+    instructions.innerHTML = 'It\'s a DRAW!';
   } else if (compChoice === 1) {
-    console.log('You lose!');
+    instructions.innerHTML = 'YOU LOSE!';
   } else {
-    console.log('You win!');
+    instructions.innerHTML = 'YOU WIN!';
   }
 }
 
 // Player selected paper and the choice value is set to 1
 function paperChoice() {
   var compChoice = showCompResult();
+  var instructions = document.getElementById('instructions');
+  // Check for win
   if (compChoice === 1) {
-    console.log('It is a draw!');
+    instructions.innerHTML = 'It\'s a DRAW!';
   } else if (compChoice === 2) {
-    console.log('You lose!');
+    instructions.innerHTML = 'YOU LOSE!';
   } else {
-    console.log('You win!');
+    instructions.innerHTML = 'YOU WIN!';
   }
 }
 
 // Player selected scissors and the choice value is set to 2
 function scissorsChoice() {
   var compChoice = showCompResult();
+  var instructions = document.getElementById('instructions');
+  // Check for win
   if (compChoice === 2) {
-    console.log('It is a draw!');
+    instructions.innerHTML = 'It\'s a DRAW!';
   } else if (compChoice === 0) {
-    console.log('You lose!');
+    instructions.innerHTML = 'YOU LOSE!';
   } else {
-    console.log('You win!');
+    instructions.innerHTML = 'YOU WIN!';
   }
 }
 
