@@ -46,7 +46,7 @@ header h1 {
 
 #instructions {
   font-size: 2.2rem;
-  margin: 40px 25px;
+  margin: 40px 20px;
 }
 
 /*
@@ -92,7 +92,7 @@ header h1 {
 }
 
 #scores p {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   display: inline;
 }
 
