@@ -106,4 +106,6 @@ document.getElementById('reset-btn').addEventListener('click', function() {
   // Removes mark from last winner
   document.getElementById('comp-score').classList.remove('last-winner');
   document.getElementById('player-score').classList.remove('last-winner');
+  // Resets instructions to inicial text
+  document.getElementById('instructions').innerHTML = 'Click any option below to start the game';
 });
