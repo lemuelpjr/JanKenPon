@@ -108,4 +108,7 @@ document.getElementById('reset-btn').addEventListener('click', function() {
   document.getElementById('player-score').classList.remove('last-winner');
   // Resets instructions to inicial text
   document.getElementById('instructions').innerHTML = 'Click any option below to start the game';
+  // Resets computer result for waiting
+  document.getElementById('result-txt').innerHTML = 'Waiting...';
+  document.getElementById('result-img').src = 'img/waiting.png';
 });
