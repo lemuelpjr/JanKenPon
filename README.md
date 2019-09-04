@@ -1,4 +1,4 @@
-# Janken
+# JanKenPon
 
 A rock-paper-scissors game.
 
